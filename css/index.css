@@ -5360,4 +5360,73 @@ blockquote.pullquote.right {
   -ms-transform: none !important;
   transform: none !important;
 }
-.
+.read-mode #article-container ol:before,
+.read-mode #article-container li:before {
+  background: transparent !important;
+  color: var(--font-color) !important;
+}
+.read-mode #article-container ul >li:before {
+  border: 0.15rem solid var(--gray) !important;
+}
+.read-mode #article-container .tabs {
+  border: 2px solid var(--tab-border-color);
+}
+.read-mode #article-container .tabs > .nav-tabs {
+  background: transparent;
+}
+.read-mode #article-container .tabs > .nav-tabs > .tab {
+  border-bottom: 0;
+}
+.read-mode #article-container .tabs > .nav-tabs > .tab button {
+  border-top: none !important;
+  background: transparent;
+}
+.read-mode #article-container .tabs > .nav-tabs > .tab button:hover {
+  background: none !important;
+}
+.read-mode #article-container .tabs > .nav-tabs > .tab.active button {
+  text-decoration: underline;
+}
+.read-mode #article-container .tabs > .tab-contents .tab-item-content.active {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  -ms-animation: none;
+  animation: none;
+}
+.read-mode #article-container code {
+  color: var(--font-color);
+}
+.read-mode #article-container blockquote {
+  border-left: 0.2rem solid var(--gray);
+  background-color: var(--readmode-light-color);
+}
+.read-mode #article-container .hide-toggle {
+  border: 1px solid var(--gray) !important;
+}
+.read-mode #article-container .hide-button,
+.read-mode #article-container .btn-beautify {
+  background: var(--readmode-light-color) !important;
+  color: var(--font-color) !important;
+}
+.read-mode #article-container .btn-beautify {
+  border: 1px solid var(--gray) !important;
+}
+.read-mode #article-container .button--animated:before {
+  background: var(--readmode-light-color) !important;
+}
+.read-mode #article-container .hide-inline >.hide-button,
+.read-mode #article-container .hide-block >.hide-button {
+  border: 1px solid var(--gray);
+}
+.read-mode #article-container .hide-inline > .button--animated:before,
+.read-mode #article-container .hide-block > .button--animated:before {
+  background: var(--readmode-light-color);
+}
+.read-mode #article-container .note {
+  border: 2px solid var(--gray);
+  border-left-color: var(--gray) !important;
+  filter: none;
+  background-color: var(--readmode-light-color) !important;
+  color: var(--font-color);
+}
