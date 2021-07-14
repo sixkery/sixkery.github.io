@@ -1,0 +1,3 @@
+[submodule "themes/LeaveIt"]
+	path = themes/LeaveIt
+	url = https://github.com/Mogeko/LeaveIt.git
