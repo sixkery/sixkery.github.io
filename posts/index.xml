@@ -6,25 +6,7 @@
     <description>Recent content in Posts on sixkery`s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 25 Jun 2021 21:46:37 +0800</lastBuildDate><atom:link href="https://sixkery.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>第一份工作结束</title>
-      <link>https://sixkery.github.io/2021/%E6%B1%87%E4%BB%93%E5%A4%8D%E4%BB%B6/</link>
-      <pubDate>Fri, 25 Jun 2021 21:46:37 +0800</pubDate>
-      
-      <guid>https://sixkery.github.io/2021/%E6%B1%87%E4%BB%93%E5%A4%8D%E4%BB%B6/</guid>
-      <description>第一家公司是给空调行业做的系统，经过疫情之后倒闭了。倒不是产品经不起市场的考验，更多的是，产品并没有那么直击行业痛点。创业公司的业务需求大部</description>
-    </item>
-    
-    <item>
-      <title>第一份工作结束</title>
-      <link>https://sixkery.github.io/2021/%E6%B1%87%E4%BB%93/</link>
-      <pubDate>Fri, 25 Jun 2021 21:46:37 +0800</pubDate>
-      
-      <guid>https://sixkery.github.io/2021/%E6%B1%87%E4%BB%93/</guid>
-      <description>第一家公司是给空调行业做的系统，经过疫情之后倒闭了。倒不是产品经不起市场的考验，更多的是，产品并没有那么直击行业痛点。创业公司的业务需求大部</description>
-    </item>
-    
+    <lastBuildDate>Wed, 02 Jun 2021 10:15:22 +0800</lastBuildDate><atom:link href="https://sixkery.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo 配置文章显示目录报错解决</title>
       <link>https://sixkery.github.io/2021/hugo%E5%AE%89%E8%A3%85%E6%89%A9%E5%B1%95/</link>
@@ -41,6 +23,15 @@
       
       <guid>https://sixkery.github.io/2021/my_first_blog/</guid>
       <description>Java 流式操作 anyMatch：判断条件中任意一个元素与之匹配，返回 true。 allMatch：判断条件中所有元素相同，返回 true。 List&amp;lt;Integer&amp;gt; integers = Arrays.asList(1, 2,</description>
+    </item>
+    
+    <item>
+      <title>第一份工作结束</title>
+      <link>https://sixkery.github.io/2020/%E6%B1%87%E4%BB%93/</link>
+      <pubDate>Thu, 25 Jun 2020 21:46:37 +0800</pubDate>
+      
+      <guid>https://sixkery.github.io/2020/%E6%B1%87%E4%BB%93/</guid>
+      <description>第一家公司是给空调行业做的系统，经过疫情之后倒闭了。倒不是产品经不起市场的考验，更多的是，产品并没有那么直击行业痛点。创业公司的业务需求大部</description>
     </item>
     
     <item>
