@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hugo on w01fb0ss`s blog</title>
-    <link>https://w01fb0ss.github.io/tags/hugo/</link>
-    <description>Recent content in hugo on w01fb0ss`s blog</description>
+    <title>hugo on sixkery`s blog</title>
+    <link>https://sixkery.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on sixkery`s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 02 Jun 2021 10:15:22 +0800</lastBuildDate><atom:link href="https://w01fb0ss.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Jun 2021 10:15:22 +0800</lastBuildDate><atom:link href="https://sixkery.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo 配置文章显示目录报错解决</title>
-      <link>https://w01fb0ss.github.io/2021/hugo%E5%AE%89%E8%A3%85%E6%89%A9%E5%B1%95/</link>
+      <link>https://sixkery.github.io/2021/hugo%E5%AE%89%E8%A3%85%E6%89%A9%E5%B1%95/</link>
       <pubDate>Wed, 02 Jun 2021 10:15:22 +0800</pubDate>
       
-      <guid>https://w01fb0ss.github.io/2021/hugo%E5%AE%89%E8%A3%85%E6%89%A9%E5%B1%95/</guid>
+      <guid>https://sixkery.github.io/2021/hugo%E5%AE%89%E8%A3%85%E6%89%A9%E5%B1%95/</guid>
       <description>使用 hugo 搭建博客，想要在文章中显示目录，需要在配置文件中添加 [params] toc = true 但是添加完之后再次启动会报错： Warning “you need the extended version to build SCSS/SASS“ not</description>
     </item>
     

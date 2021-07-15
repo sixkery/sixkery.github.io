@@ -63,4 +63,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: https://w01fb0ss.github.io/sitemap.xml
+Sitemap: https://sixkery.github.io/sitemap.xml

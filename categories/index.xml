@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on w01fb0ss`s blog</title>
-    <link>https://w01fb0ss.github.io/categories/</link>
-    <description>Recent content in Categories on w01fb0ss`s blog</description>
+    <title>Categories on sixkery`s blog</title>
+    <link>https://sixkery.github.io/categories/</link>
+    <description>Recent content in Categories on sixkery`s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 25 Jun 2021 21:46:37 +0800</lastBuildDate><atom:link href="https://w01fb0ss.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Jun 2021 21:46:37 +0800</lastBuildDate><atom:link href="https://sixkery.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>生活</title>
-      <link>https://w01fb0ss.github.io/categories/%E7%94%9F%E6%B4%BB/</link>
+      <link>https://sixkery.github.io/categories/%E7%94%9F%E6%B4%BB/</link>
       <pubDate>Fri, 25 Jun 2021 21:46:37 +0800</pubDate>
       
-      <guid>https://w01fb0ss.github.io/categories/%E7%94%9F%E6%B4%BB/</guid>
+      <guid>https://sixkery.github.io/categories/%E7%94%9F%E6%B4%BB/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Java</title>
-      <link>https://w01fb0ss.github.io/categories/java/</link>
+      <link>https://sixkery.github.io/categories/java/</link>
       <pubDate>Tue, 01 Jun 2021 21:46:37 +0800</pubDate>
       
-      <guid>https://w01fb0ss.github.io/categories/java/</guid>
+      <guid>https://sixkery.github.io/categories/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ElasticSearch</title>
-      <link>https://w01fb0ss.github.io/categories/elasticsearch/</link>
+      <link>https://sixkery.github.io/categories/elasticsearch/</link>
       <pubDate>Mon, 01 Jun 2020 21:46:37 +0800</pubDate>
       
-      <guid>https://w01fb0ss.github.io/categories/elasticsearch/</guid>
+      <guid>https://sixkery.github.io/categories/elasticsearch/</guid>
       <description></description>
     </item>
     
