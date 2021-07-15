@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="w01fb0ss">
+  <meta name="description" content="w01fb0ss 的个人博客">
+  <meta name="keywords" content="blog, KMS, Hugo, GNU/Linux, Linux">
+  
+  
+  <link rel="next" href="https://w01fb0ss.github.io/2021/my_first_blog/" />
+  <link rel="canonical" href="https://w01fb0ss.github.io/2020/2019-7-09-elasticsearch/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           ElasticSearch 实现 MySQL 数据同步 | w01fb0ss`s blog
+       
+  </title>
+  <meta name="title" content="ElasticSearch 实现 MySQL 数据同步 | w01fb0ss`s blog">
+    
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/w01fb0ss.github.io"
+    },
+    "articleSection" : "posts",
+    "name" : "ElasticSearch 实现 MySQL 数据同步",
+    "headline" : "ElasticSearch 实现 MySQL 数据同步",
+    "description" : "SpringBoot 集成 ElasticSearch 实现 MySQL 数据同步 需要提前安装好 ElasticSearch 。logstash 安装下文有具体说明。 新建表 blog 必须有字段 id update_time，可参考项目中 entity 包下字",
+    "inLanguage" : "zh-cn",
+    "author" : "w01fb0ss",
+    "creator" : "w01fb0ss",
+    "publisher": "w01fb0ss",
+    "accountablePerson" : "w01fb0ss",
+    "copyrightHolder" : "w01fb0ss",
+    "copyrightYear" : "2020",
+    "datePublished": "2020-06-01 21:46:37 \u002b0800 CST",
+    "dateModified" : "2020-06-01 21:46:37 \u002b0800 CST",
+    "url" : "https:\/\/w01fb0ss.github.io\/2020\/2019-7-09-elasticsearch\/",
+    "wordCount" : "517",
+    "keywords" : [ "ElasticSearch", "w01fb0ss`s blog"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    
+        <div class="top-scroll-bar"></div>
+    
+    <div class="container">
+        <div class="navbar-header header-logo">
+            
+            <span class="logo_mark" >></span>
+            <a href="https://w01fb0ss.github.io">
+                <span class="logo_text" >$ cd /home/ </span>
+                <span class="logo_cursor" ></span>
+            </a>
+            
+        </div>
+        <div class="navbar-right">
+                
+                <span class="menu">
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+                </span>
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dark-mode"></i></a>
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     
+         <div class="top-scroll-bar"></div>
+     
+     <div class="container">
+        <div class="navbar-header">
+            <div class="header-logo">
+                
+                    <span class="logo_mark">></span>
+                    <a href="https://w01fb0ss.github.io">
+                        <span class="logo_text">$ cd /home/ </span>
+                        <span class="logo_cursor"></span>
+                </a>
+                
+            </div>
+            <div class="navbar-right">
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dark-mode"></i></a>
+                <div class="menu-toggle">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">ElasticSearch 实现 MySQL 数据同步</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://w01fb0ss.github.io" rel="author">w01fb0ss</a> with ♥
+                <span class="post-time">
+                on <time datetime=2020-06-01 itemprop="datePublished">June 1, 2020</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://w01fb0ss.github.io/categories/elasticsearch/"> ElasticSearch </a>
+                        
+                </span>
+                <span class="post-word-count">, 517 words</span>
+        </div>
+    </header>
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title"></h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#springboot-集成-elasticsearch-实现-mysql-数据同步">SpringBoot 集成 ElasticSearch 实现 MySQL 数据同步</a></li>
+        <li><a href="#配置-logstash">配置 logstash</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+<script type="text/javascript">
+  window.onload = function () {
+    var fix = $('.post-toc');
+    var end = $('.post-comment');
+    var fixTop = fix.offset().top, fixHeight = fix.height();
+    var endTop, miss;
+    var offsetTop = fix[0].offsetTop;
+    $(window).scroll(function () {
+      var docTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+      if (end.length > 0) {
+        endTop = end.offset().top;
+        miss = endTop - docTop - fixHeight;
+      }
+      if (fixTop < docTop) {
+        fix.css({ 'position': 'fixed' });
+        if ((end.length > 0) && (endTop < (docTop + fixHeight))) {
+          fix.css({ top: miss });
+        } else {
+          fix.css({ top: 0 });
+        }
+      } else {
+        fix.css({ 'position': 'absolute' });
+        fix.css({ top: offsetTop });
+      }
+    })
+  }
+</script>
+
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+
+          
+          
+          
+
+          
+          
+          
+
+          <h3 id="springboot-集成-elasticsearch-实现-mysql-数据同步">SpringBoot 集成 ElasticSearch 实现 MySQL 数据同步</h3>
+<p>需要提前安装好 ElasticSearch 。logstash 安装下文有具体说明。
+新建表 blog 必须有字段 id update_time，可参考项目中 entity 包下字段建表。
+项目地址 <a href="https://github.com/sixkery/blog_index">SpringBoot 搭建博客检索系统</a>
+使用步骤</p>
+<ol>
+<li>download 本项目</li>
+<li>修改 yml 文件中的数据库配置，es 配置。</li>
+<li>配置 logstash ，见下文。</li>
+<li>启动本项目，在本地 8081 端口访问项目，可以看到有两个按钮，分别是通过 MySQL 的模糊查询和 es 的检索耗时比较。</li>
+</ol>
+<h3 id="配置-logstash">配置 logstash</h3>
+<p>使用 logstash 同步  mysql 中的数据。全量同步，增量更新
+这里使用虚拟机中的 centos 。
+前提，CentOS 中安装 ElasticSearch 。
+第一步，下载 <a href="https://www.elastic.co/cn/downloads/past-releases#logstash">logstash</a>
+第二步，把数据库连接的驱动 jar 包放到 logstash 的目录中。
+<img src="/home/sixkery/learn/note/images/1574645141708.png" alt="enter description here">
+第三步，在 config 文件夹中新建文件 <code>mysql.conf</code>，配置数据库，es 端口等输入输出规则</p>
+<pre><code class="language-dsconfig" data-lang="dsconfig">input{
+  jdbc{
+    # jdbc 驱动包位置
+    jdbc_driver_library =&gt; &quot;/home/es/logstash-6.2.4/mysql-connector-java-5.1.6.jar&quot;
+    # 要使用的驱动包类
+    jdbc_driver_class =&gt; &quot;com.mysql.jdbc.Driver&quot; 
+    # mysql 数据库的连接信息
+    jdbc_connection_string =&gt; &quot;jdbc:mysql://localhost:3306/blog&quot;
+    # mysql 用户
+    jdbc_user =&gt; &quot;root&quot;
+    # 密码
+    jdbc_password =&gt; &quot;密码&quot;
+    # 定时任务，多久执行一次查询，默认一分钟，如果想要没有延迟，可以使用 schedule =&gt; &quot;* * * * *&quot;
+    schedule =&gt; &quot;* * * * *&quot;
+    # 清空上一次的 sql_last_value 记录
+    clean_run =&gt; true
+    # 要执行的语句
+    statement =&gt; &quot;select * from t_blog where update_time &gt; :sql_last_value and update_time &lt; NOW() order by update_time desc&quot;
+    }
+}
+
+output {
+  elasticsearch {
+    # es host : port
+    hosts =&gt; [&quot;192.168.42.134:9200&quot;]
+    # 索引
+    index =&gt; &quot;blog&quot;
+    # _id
+    document_id =&gt; &quot;%{id}&quot;
+  }
+}
+
+</code></pre><p>第四步，以配置文件的方式启动 logstash</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#f92672">[</span>es@localhost bin<span style="color:#f92672">]</span>$ ./logstash -f ../config/mysql.conf 
+</code></pre></div><p>第五步，kibana 中查看是否同步成功</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">GET blog/_stats
+// 查看全部数据
+POST blog/_search
+<span style="color:#f92672">{</span>
+<span style="color:#f92672">}</span>
+</code></pre></div>
+    </div>
+
+    <div class="post-copyright">
+            
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>w01fb0ss </span>
+                </p>
+            
+
+            
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://w01fb0ss.github.io/2020/2019-7-09-elasticsearch/>https://w01fb0ss.github.io/2020/2019-7-09-elasticsearch/</span>
+            </p>
+            
+            
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s):
+            
+            <span class="tag"><a href="https://w01fb0ss.github.io/tags/elasticsearch/">
+                    #ElasticSearch</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> ·
+                <span><a href="https://w01fb0ss.github.io">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        
+        <a href="https://w01fb0ss.github.io/2021/my_first_blog/" class="next" rel="next" title="Java8 终端操作">Java8 终端操作&nbsp;<i class="iconfont icon-right"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+        
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.bootcss.com/gitalk/1.5.0/gitalk.css">
+<script src="https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+
+        clientID: '1179a38ac904130ae2bf',
+        clientSecret: '94a570cd5b595699757d0d05972a9f2cafa2873d',
+        repo: 'w01fb0ss.github.io',
+        owner: 'w01fb0ss',
+        admin: ['w01fb0ss'],
+        id: location.pathname, 
+        distractionFreeMode: false 
+    });
+    (function () {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('gitalk-container').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
+            return;
+        }
+        gitalk.render('gitalk-container');
+    })();
+</script>
+
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2019 - 2021</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://w01fb0ss.github.io">w01fb0ss</a> | </span> 
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="https://cdn.bootcss.com/lightgallery/1.6.11/css/lg-fb-comment-box.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on w01fb0ss`s blog</title>
+    <link>https://w01fb0ss.github.io/tags/</link>
+    <description>Recent content in Tags on w01fb0ss`s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 25 Jun 2021 21:46:37 +0800</lastBuildDate><atom:link href="https://w01fb0ss.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>生活</title>
+      <link>https://w01fb0ss.github.io/tags/%E7%94%9F%E6%B4%BB/</link>
+      <pubDate>Fri, 25 Jun 2021 21:46:37 +0800</pubDate>
+      
+      <guid>https://w01fb0ss.github.io/tags/%E7%94%9F%E6%B4%BB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://w01fb0ss.github.io/tags/hugo/</link>
+      <pubDate>Wed, 02 Jun 2021 10:15:22 +0800</pubDate>
+      
+      <guid>https://w01fb0ss.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java流</title>
+      <link>https://w01fb0ss.github.io/tags/java%E6%B5%81/</link>
+      <pubDate>Tue, 01 Jun 2021 21:46:37 +0800</pubDate>
+      
+      <guid>https://w01fb0ss.github.io/tags/java%E6%B5%81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ElasticSearch</title>
+      <link>https://w01fb0ss.github.io/tags/elasticsearch/</link>
+      <pubDate>Mon, 01 Jun 2020 21:46:37 +0800</pubDate>
+      
+      <guid>https://w01fb0ss.github.io/tags/elasticsearch/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

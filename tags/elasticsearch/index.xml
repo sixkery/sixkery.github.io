@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ElasticSearch on w01fb0ss`s blog</title>
+    <link>https://w01fb0ss.github.io/tags/elasticsearch/</link>
+    <description>Recent content in ElasticSearch on w01fb0ss`s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 01 Jun 2020 21:46:37 +0800</lastBuildDate><atom:link href="https://w01fb0ss.github.io/tags/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ElasticSearch 实现 MySQL 数据同步</title>
+      <link>https://w01fb0ss.github.io/2020/2019-7-09-elasticsearch/</link>
+      <pubDate>Mon, 01 Jun 2020 21:46:37 +0800</pubDate>
+      
+      <guid>https://w01fb0ss.github.io/2020/2019-7-09-elasticsearch/</guid>
+      <description>SpringBoot 集成 ElasticSearch 实现 MySQL 数据同步 需要提前安装好 ElasticSearch 。logstash 安装下文有具体说明。 新建表 blog 必须有字段 id update_time，可参考项目中 entity 包下字</description>
+    </item>
+    
+  </channel>
+</rss>

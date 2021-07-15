@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java流 on w01fb0ss`s blog</title>
+    <link>https://w01fb0ss.github.io/tags/java%E6%B5%81/</link>
+    <description>Recent content in Java流 on w01fb0ss`s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 01 Jun 2021 21:46:37 +0800</lastBuildDate><atom:link href="https://w01fb0ss.github.io/tags/java%E6%B5%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java8 终端操作</title>
+      <link>https://w01fb0ss.github.io/2021/my_first_blog/</link>
+      <pubDate>Tue, 01 Jun 2021 21:46:37 +0800</pubDate>
+      
+      <guid>https://w01fb0ss.github.io/2021/my_first_blog/</guid>
+      <description>Java 流式操作 anyMatch：判断条件中任意一个元素与之匹配，返回 true。 allMatch：判断条件中所有元素相同，返回 true。 List&amp;lt;Integer&amp;gt; integers = Arrays.asList(1, 2,</description>
+    </item>
+    
+  </channel>
+</rss>

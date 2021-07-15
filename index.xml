@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>w01fb0ss`s blog on w01fb0ss`s blog</title>
+    <link>https://w01fb0ss.github.io/</link>
+    <description>Recent content in w01fb0ss`s blog on w01fb0ss`s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 25 Jun 2021 21:46:37 +0800</lastBuildDate>
+    <atom:link href="https://w01fb0ss.github.io/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Posts</title>
+      <link>https://w01fb0ss.github.io/posts/</link>
+      <pubDate>Fri, 25 Jun 2021 21:46:37 +0800</pubDate>
+      
+      <guid>https://w01fb0ss.github.io/posts/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
