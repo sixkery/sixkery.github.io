@@ -9,9 +9,9 @@
   <meta name="description" content="sixkery 的个人博客">
   <meta name="keywords" content="blog, KMS, Hugo, GNU/Linux, Linux">
   
-  <link rel="prev" href="https://sixkery.github.io/2020/2019-7-09-elasticsearch/" />
-  <link rel="next" href="https://sixkery.github.io/2021/docker/" />
-  <link rel="canonical" href="https://sixkery.github.io/2020/%E6%B1%87%E4%BB%93/" />
+  <link rel="prev" href="https://sixkery.github.io/2020/%E6%B1%87%E4%BB%93/" />
+  <link rel="next" href="https://sixkery.github.io/2021/my_first_blog/" />
+  <link rel="canonical" href="https://sixkery.github.io/2021/docker/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           第一份工作结束 | sixkery`s blog
+           docker 更换镜像源 | sixkery`s blog
        
   </title>
-  <meta name="title" content="第一份工作结束 | sixkery`s blog">
+  <meta name="title" content="docker 更换镜像源 | sixkery`s blog">
     
   <link rel="stylesheet" href="/css/main.min.css">
 
@@ -42,21 +42,21 @@
          "@id": "https:\/\/sixkery.github.io"
     },
     "articleSection" : "posts",
-    "name" : "第一份工作结束",
-    "headline" : "第一份工作结束",
-    "description" : "第一家公司是给空调行业做的系统，经过疫情之后倒闭了。倒不是产品经不起市场的考验，更多的是，产品并没有那么直击行业痛点。创业公司的业务需求大部",
+    "name" : "docker 更换镜像源",
+    "headline" : "docker 更换镜像源",
+    "description" : "在使用 docker 的过程中，拉取国外的镜像源十分慢，有时还会报错，可以更换为国内的镜像源。 可用的镜像源 https:\/\/registry.docker-cn.com Docker 官方中国区 http:\/\/hub-mirror.c.163.com 网易 https:\/\/docker.mirrors.ustc.edu.cn 中国科技大学 编辑 docker 的镜像源",
     "inLanguage" : "zh-cn",
     "author" : "sixkery",
     "creator" : "sixkery",
     "publisher": "sixkery",
     "accountablePerson" : "sixkery",
     "copyrightHolder" : "sixkery",
-    "copyrightYear" : "2020",
-    "datePublished": "2020-06-25 21:46:37 \u002b0800 CST",
-    "dateModified" : "2020-06-25 21:46:37 \u002b0800 CST",
-    "url" : "https:\/\/sixkery.github.io\/2020\/%E6%B1%87%E4%BB%93\/",
-    "wordCount" : "214",
-    "keywords" : [ "生活", "sixkery`s blog"]
+    "copyrightYear" : "2021",
+    "datePublished": "2021-04-01 21:46:37 \u002b0800 CST",
+    "dateModified" : "2021-04-01 21:46:37 \u002b0800 CST",
+    "url" : "https:\/\/sixkery.github.io\/2021\/docker\/",
+    "wordCount" : "160",
+    "keywords" : [ "Docker", "sixkery`s blog"]
 }
 </script>
 
@@ -140,19 +140,19 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">第一份工作结束</h1>
+        <h1 class="post-title" itemprop="name headline">docker 更换镜像源</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://sixkery.github.io" rel="author">sixkery</a> with ♥
                 <span class="post-time">
-                on <time datetime=2020-06-25 itemprop="datePublished">June 25, 2020</time>
+                on <time datetime=2021-04-01 itemprop="datePublished">April 1, 2021</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://sixkery.github.io/categories/%E7%94%9F%E6%B4%BB/"> 生活 </a>
+                        <a href="https://sixkery.github.io/categories/docker/"> docker </a>
                         
                 </span>
-                <span class="post-word-count">, 214 words</span>
+                <span class="post-word-count">, 160 words</span>
         </div>
     </header>
     <div class="post-toc" id="post-toc">
@@ -207,9 +207,21 @@
           
           
 
-          <p>第一家公司是给空调行业做的系统，经过疫情之后倒闭了。倒不是产品经不起市场的考验，更多的是，产品并没有那么直击行业痛点。创业公司的业务需求大部分来源于老板的口述。有时候没有接触过技术的人员跟开发来说一件事情，很难转化为具体的需求。</p>
-<p>一个团队基本的岗位都有。</p>
-<p>第一家工作的挺开心的，有可爱的同事，领导也挺不错的，经常带我们撸串。旁边有位五年的 Java 大佬。从他身上学到好多东西，比如他那较真的劲，当时遇到一个 bug 。一起翻了 Security 的源码。想想挺美好。</p>
+          <p>在使用 docker 的过程中，拉取国外的镜像源十分慢，有时还会报错，可以更换为国内的镜像源。</p>
+<p>可用的镜像源</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">https://registry.docker-cn.com Docker 官方中国区
+http://hub-mirror.c.163.com 网易
+https://docker.mirrors.ustc.edu.cn 中国科技大学
+</code></pre></div><p>编辑 docker 的镜像源配置文件 <code>vim /etc/docker/daemon.json</code>（第一次操作可能不存在，新建就好）</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;registry-mirrors&#34;</span>: [<span style="color:#e6db74">&#34;https://registry.docker-cn.com&#34;</span>,<span style="color:#e6db74">&#34;http://hub-mirror.c.163.com&#34;</span>,<span style="color:#e6db74">&#34;https://docker.mirrors.ustc.edu.cn&#34;</span>]
+ }
+</code></pre></div><p>然后重启服务 <code>service docker restart</code></p>
+<p>查看是否生效 <code>docker info|grep Mirrors -A 1</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">WARNING: No swap limit support
+ Registry Mirrors:
+  https://registry.docker-cn.com/
+</code></pre></div><p>然后在进行拉取，不会报错。</p>
 
     </div>
 
@@ -224,7 +236,7 @@
             
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://sixkery.github.io/2020/%E6%B1%87%E4%BB%93/>https://sixkery.github.io/2020/%E6%B1%87%E4%BB%93/</span>
+                    <a href=https://sixkery.github.io/2021/docker/>https://sixkery.github.io/2021/docker/</span>
             </p>
             
             
@@ -240,8 +252,8 @@
             <section>
             <i class="iconfont icon-tag"></i>Tag(s):
             
-            <span class="tag"><a href="https://sixkery.github.io/tags/%E7%94%9F%E6%B4%BB/">
-                    #生活</a></span>
+            <span class="tag"><a href="https://sixkery.github.io/tags/docker/">
+                    #Docker</a></span>
             
             </section>
         
@@ -253,10 +265,10 @@
 
     <div class="post-nav">
         
-        <a href="https://sixkery.github.io/2020/2019-7-09-elasticsearch/" class="prev" rel="prev" title="ElasticSearch 实现 MySQL 数据同步"><i class="iconfont icon-left"></i>&nbsp;ElasticSearch 实现 MySQL 数据同步</a>
+        <a href="https://sixkery.github.io/2020/%E6%B1%87%E4%BB%93/" class="prev" rel="prev" title="第一份工作结束"><i class="iconfont icon-left"></i>&nbsp;第一份工作结束</a>
         
         
-        <a href="https://sixkery.github.io/2021/docker/" class="next" rel="next" title="docker 更换镜像源">docker 更换镜像源&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="https://sixkery.github.io/2021/my_first_blog/" class="next" rel="next" title="Java8 终端操作">Java8 终端操作&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

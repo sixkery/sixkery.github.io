@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on sixkery`s blog</title>
+    <link>https://sixkery.github.io/categories/docker/</link>
+    <description>Recent content in docker on sixkery`s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 01 Apr 2021 21:46:37 +0800</lastBuildDate><atom:link href="https://sixkery.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker 更换镜像源</title>
+      <link>https://sixkery.github.io/2021/docker/</link>
+      <pubDate>Thu, 01 Apr 2021 21:46:37 +0800</pubDate>
+      
+      <guid>https://sixkery.github.io/2021/docker/</guid>
+      <description>在使用 docker 的过程中，拉取国外的镜像源十分慢，有时还会报错，可以更换为国内的镜像源。 可用的镜像源 https://registry.docker-cn.com Docker 官方中国区 http://hub-mirror.c.163.com 网易 https://docker.mirrors.ustc.edu.cn 中国科技大学 编辑 docker 的镜像源</description>
+    </item>
+    
+  </channel>
+</rss>

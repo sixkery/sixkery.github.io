@@ -9,7 +9,7 @@
   <meta name="description" content="sixkery 的个人博客">
   <meta name="keywords" content="blog, KMS, Hugo, GNU/Linux, Linux">
   
-  <link rel="prev" href="https://sixkery.github.io/2020/%E6%B1%87%E4%BB%93/" />
+  <link rel="prev" href="https://sixkery.github.io/2021/docker/" />
   <link rel="next" href="https://sixkery.github.io/2021/hugo%E5%AE%89%E8%A3%85%E6%89%A9%E5%B1%95/" />
   <link rel="canonical" href="https://sixkery.github.io/2021/my_first_blog/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -55,7 +55,7 @@
     "datePublished": "2021-06-01 21:46:37 \u002b0800 CST",
     "dateModified" : "2021-06-01 21:46:37 \u002b0800 CST",
     "url" : "https:\/\/sixkery.github.io\/2021\/my_first_blog\/",
-    "wordCount" : "380",
+    "wordCount" : "432",
     "keywords" : [ "Java流", "sixkery`s blog"]
 }
 </script>
@@ -152,7 +152,7 @@
                         <a href="https://sixkery.github.io/categories/java/"> Java </a>
                         
                 </span>
-                <span class="post-word-count">, 380 words</span>
+                <span class="post-word-count">, 432 words</span>
         </div>
     </header>
     <div class="post-toc" id="post-toc">
@@ -165,6 +165,7 @@
       <ul>
         <li><a href="#java-流式操作">Java 流式操作</a></li>
         <li><a href="#流式排序">流式排序</a></li>
+        <li><a href="#分组">分组</a></li>
       </ul>
     </li>
   </ul>
@@ -248,7 +249,9 @@ integers<span style="color:#f92672">.</span><span style="color:#a6e22e">stream</
 list<span style="color:#f92672">.</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">().</span><span style="color:#a6e22e">sorted</span><span style="color:#f92672">(</span>Comparator<span style="color:#f92672">.</span><span style="color:#a6e22e">comparing</span><span style="color:#f92672">(</span>对象<span style="color:#f92672">::</span>属性<span style="color:#f92672">).</span><span style="color:#a6e22e">reversed</span><span style="color:#f92672">()).</span><span style="color:#a6e22e">collect</span><span style="color:#f92672">(</span>Collectors<span style="color:#f92672">.</span><span style="color:#a6e22e">toList</span><span style="color:#f92672">());</span>
 </code></pre></div></li>
 </ol>
-
+<h3 id="分组">分组</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"> list <span style="color:#f92672">.</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">().</span><span style="color:#a6e22e">collect</span><span style="color:#f92672">(</span>Collectors<span style="color:#f92672">.</span><span style="color:#a6e22e">groupingBy</span><span style="color:#f92672">(</span>对象<span style="color:#f92672">::</span>属性<span style="color:#f92672">));</span>
+</code></pre></div>
     </div>
 
     <div class="post-copyright">
@@ -291,7 +294,7 @@ list<span style="color:#f92672">.</span><span style="color:#a6e22e">stream</span
 
     <div class="post-nav">
         
-        <a href="https://sixkery.github.io/2020/%E6%B1%87%E4%BB%93/" class="prev" rel="prev" title="第一份工作结束"><i class="iconfont icon-left"></i>&nbsp;第一份工作结束</a>
+        <a href="https://sixkery.github.io/2021/docker/" class="prev" rel="prev" title="docker 更换镜像源"><i class="iconfont icon-left"></i>&nbsp;docker 更换镜像源</a>
         
         
         <a href="https://sixkery.github.io/2021/hugo%E5%AE%89%E8%A3%85%E6%89%A9%E5%B1%95/" class="next" rel="next" title="Hugo 配置文章显示目录报错解决">Hugo 配置文章显示目录报错解决&nbsp;<i class="iconfont icon-right"></i></a>
