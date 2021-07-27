@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 01 Jun 2021 21:46:37 +0800</lastBuildDate><atom:link href="https://sixkery.github.io/tags/java%E6%B5%81/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java8 终端操作</title>
-      <link>https://sixkery.github.io/2021/my_first_blog/</link>
+      <link>https://sixkery.github.io/2021/java%E6%B5%81/</link>
       <pubDate>Tue, 01 Jun 2021 21:46:37 +0800</pubDate>
       
-      <guid>https://sixkery.github.io/2021/my_first_blog/</guid>
+      <guid>https://sixkery.github.io/2021/java%E6%B5%81/</guid>
       <description>Java 流式操作 anyMatch：判断条件中任意一个元素与之匹配，返回 true。 allMatch：判断条件中所有元素相同，返回 true。 List&amp;lt;Integer&amp;gt; integers = Arrays.asList(1, 2,</description>
     </item>
     
